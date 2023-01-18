@@ -1,0 +1,2 @@
+# design_pattern_beginner
+「Java言語で学ぶデザインパターン入門」をgoで書き直したリポジトリ
