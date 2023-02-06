@@ -1,12 +1,12 @@
-package factorymethod
+package templatemethod
 
 /*
 テンプレートメソッド
 */
 type IDisplay interface {
-	open()
-	print()
-	close()
+	Open()
+	Print()
+	Close()
 }
 
 type Display struct {
@@ -14,9 +14,9 @@ type Display struct {
 }
 
 func (c *Display) display() {
-	c.iDisplay.open()
+	c.iDisplay.Open()
 	for i := 0; i < 5; i++ {
-		c.iDisplay.print()
+		c.iDisplay.Print()
 	}
-	c.iDisplay.close()
+	c.iDisplay.Close()
 }
