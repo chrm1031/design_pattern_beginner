@@ -1,4 +1,4 @@
-package factorymethod
+package templatemethod
 
 /*
 Template Method パターン
@@ -12,10 +12,19 @@ Template Method パターンと呼ぶ
 
 func main() {
 	_char := &CharDisplay{
-		
+		ch: "H",
 	}
 	charDisplay := &Display{
 		iDisplay: _char,
 	}
 	charDisplay.display()
+
+	_str := &StringDisplay{
+		text:  "hello",
+		width: 5,
+	}
+	strDisplay := &Display{
+		iDisplay: _str,
+	}
+	strDisplay.display()
 }
