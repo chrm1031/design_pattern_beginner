@@ -11,6 +11,7 @@ type CountDisplay struct {
 	Display
 }
 
+
 func newCountDisplay(i DisplayImpl) *CountDisplay {
 	return &CountDisplay{
 		Display{
